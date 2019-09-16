@@ -8,6 +8,7 @@
 
   <script src="components/loader.js"></script>
   <script src="lib/onsenui/js/onsenui.min.js"></script>
+    <script src="components/jquery-3.4.1.min.js"></script>
     <script src="components/acao.js"></script>
 
 <link rel="stylesheet" href="css/materialize.css">
@@ -17,31 +18,25 @@
 </head>
 <body>
   <div class="container">
-    <a class="waves-effect waves-light btn-large" id="a"><i class="material-icons right" id="a"></i>button</a>
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-   <br>
-   <label> Opacidade </label>
-   <input type="range" class="" id="opacidade"></input>
+    <a class="waves-effect waves-light btn-large" id="camera"><i class="material-icons right" id="camera" >
+      </i>Não clique aqui!!!</a>
+ <br>
+    <div class="row">
+    <img src="" alt="" id="image" class="img-responsive">
+      </div>
+      <br>
+     <label> Opacidade </label>
+   <input type="range" class="opacidade" id="opacidade"></input>
    <br> 
     <label> Saturação </label>
-   <input type="range" class="" id="saturacao"></input>
+   <input type="range" class="saturacao" id="saturacao"></input>
    <br>
      <label> Escala de cinza </label>
-     <br>
-   <input type="range" class="" id="escala"></input>
+   <input type="range" class="escala" id="escala"></input>
+        <br>
      <label>  Desfoque </label>
-     <input type="range" class="" id="desfoque"></input>
-      
-    
-    
-
-
-
+     <input type="range" class="desfoque" id="desfoque"></input>       
 </div>
 </body>
 </html>
