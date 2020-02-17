@@ -1,4 +1,10 @@
-item{
-   height: 60%;
-   widht:100%;
+.container{
+  margin-top: 50px;
+  width: 350px;
+  height: 400px;
+}
+
+img{
+  width: 500px;
+  height: 500px;
 }
