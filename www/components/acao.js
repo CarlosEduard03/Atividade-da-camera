@@ -1,25 +1,8 @@
-$(document).on("click", "#camera", function(){
-  navigator.camera.getPicture(onSuccess, onFail, {
-    quality:50,
-    destinationType: Camera.DestinationType.FILE_URI,
-    correctOrientation: true,
-    saveToPhotoAlbum: true
-  });
-
-  function onSuccess(imageURI) {
-    var image = document.getElementById("image");
-    image.src = imageURI;
+$('#myAffix').affix({
+  offset: {
+    top: 100,
+    bottom: function () {
+      return (this.bottom = $('.footer').outerHeight(true))
+    }
   }
-
-  function onFail(message) {
-    navigator.notification.alert("Failed because: " + message);
-  }
-});
-$(document).on("change", "#opacidade", function(){
-  var vlo = window.document.getElementById('opacidade');
-  var vl1 = Number(vlo.value);
-  var a = window.document.getElementById('image');
-  image.style.filter = 'grayscale(${vl1}%)';
-});
-
-
+})

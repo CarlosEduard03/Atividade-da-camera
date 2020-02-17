@@ -1,11 +1,4 @@
-.mapa{
-  margin-top: 375px;
+item{
+   height: 60%;
+   widht:100%;
 }
-.img-responsive{
-  width:75%;
-  height: 50%;
-}
-#camera{
-  margin-left:35px; 
-}
-
